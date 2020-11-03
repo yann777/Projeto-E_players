@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 :root{
 
     --background: #000000;
     --red: #C20000;
     --blue: #001F70;
-    --gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --black1: #1E1C21;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
 
     --font: 'Titillium Web', sans-serif;
 }
@@ -17,7 +17,6 @@
     border: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: var( --font );
     font-size: 16px;
@@ -26,44 +25,37 @@ body{
 img{
     width: 100%;
 }
-
 .topo{
     width: 100%;
     height: 5em;
     /* background-color: azure; */
 }
-
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     max-width: 75em;
     margin: auto;
     /* background-color: burlywood; */
 }
-
 .flex-center-bt{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .topo img{
     max-width: 21.18em;
 
 }
-
 .menu{
     width: 100%;
     max-width: 50em;
 }
-
 .menu ul{
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .menu a{
     color:#fff;
     text-decoration: none;
@@ -71,20 +63,16 @@ img{
     padding: 0.9em 0.5em;
     text-transform: uppercase;
 }
-
 .menu a:hover{
     background-color: var(--red);
 }
-
 #menu-bars{
     display: none;
 }
-
 .banner{
     width: 100%;
     position: relative;
 }
-
 .banner-position{
     width: 100%;
     height: 100%;
@@ -92,16 +80,14 @@ img{
     position: absolute;
     top: 0;
 }
-
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     /* background-color: rgba(222, 184, 135, 0.356); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
-
 .banner-text{
     width: 50%;
     height: 100%;
@@ -112,15 +98,12 @@ img{
     align-items: center;
     color: #fff;
 }
-
 .banner-text h1{
     font-size: 5.62em;
 }
-
 .banner-text p{
     font-size: 1.87em;
 }
-
 .banner-text a{
     font-size: 1.87em;
     text-transform: uppercase;
@@ -131,19 +114,16 @@ img{
     border-radius: 0.5em;
     margin-top: 1em;
 }
-
 .jogos{
     width: 100%;
     height: 7.5em;
+    color:#fff;
     /* background-color: chartreuse; */
-    color: white;
 }
-
 .jogos ul{
     list-style-type: none;
     width: 100%;
 }
-
 .jogos ul a:hover img{
     transition: 0.2s;
     transform: scale(1.1);
@@ -156,7 +136,6 @@ img{
     position: relative;
 
 }
-
 .about-angulation{
     width: 100%;
     height: 100%;
@@ -164,88 +143,151 @@ img{
     justify-content: center;
     align-items: center;
 }
-
 .angulation{
     width: 100%;
     height: 24em;
     background-color: #000;
     transform: skewY(-3deg)
 }
-
 .about-position{
     width: 100%;
     height: 100%;
-    /* background-color: rgba(255, 0, 0, 0.397); */
     position: absolute;
     top: 0;
 }
-
 .about-text{
     width: 50%;
     color: #fff;
     text-align: justify;
 }
-
 .about-text h2{
     font-size: 2.18em;
     margin-bottom: 0.5em;
 
 }
-
 .about-text p{
     font-size: 1.125em;
     margin-bottom: 1em;
 }
-
 .about-position img{
     max-width: 31.87em;
 }
-
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1.875em;
-
+    font-size: 1.575em; /*25,12px*/
+    /* border-right:solid 1px #fff; */
 }
-
-.jogos-aovivo::after{
-    content: none;
-    height: 80px;
-    border-right: solid 1px #fff;
-    margin: 0 1em;
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
-
-.borda{
-    height: 70%;
-    border-right: solid 1px #fff;
+.linha{
+    
+    height: 3em;
+    border:solid 1px #fff;
 }
 
 .partida{
-    width: 9.50em;
-    /*background-color: red;*/
+    width: 9.5em;
+    /* background-color: red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 1em;
 }
-
 .partida img{
-    max-width: 1.8em;
+    max-width: 1.8em; /*54px*/
 }
-
 .time1, .time2{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
-}
 
+}
 .time1 img{
     margin-left: 0.5em;
 }
-
 .time2 img{
     margin-right: 0.5em;
+}
+.bg-noticias{
+    width: 100%;
+    height: auto;
+    background-color: var(--black1);
+}
+.noticias{
+    width: 73%;
+    height: 90%;
+    /* background-color: darkgray; */
+}
+.noticias h2, .proximos-jogos h2{
+    color: #fff;
+    margin: 0.5em 0;
+    font-size: 2.1875em;
+    text-transform: uppercase;
+}
+.proximos-jogos{
+    width: 25%;
+    height:auto;
+}
+.newscard{
+    width: 100%;
+    max-width: 15em;
+    height: 23.125em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 15px rgb(59, 59, 59);
+}
+.noticias h3{
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+.noticias p{
+    padding: 0em 0.7em;
+    /* text-align: justify; */
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.proximas-partidas{
+    background: var(--gradient);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.game{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+.times{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.times div{
+    display: flex;
+    align-items: center;
+}
+.times p{
+    font-size: 1.25em;
+    font-family: 'Roboto';
+}
+.times > p{
+    margin: 0 1em;
+}
+.times img{
+    width: 2.5em;
 }
 
 @media screen and (max-width: 74.93em){
